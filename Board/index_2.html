@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="phonecatApp">
+<head>
+    <meta charset="utf-8">
+    <title>Message Board</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="js/main_2.js"></script>
+
+</head>
+<body ng-controller="PhoneListCtrl">
+<h1>Message Board</h1>
+
+<ul>
+    <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>
+            {{phone.snippet}}
+        </p>
+    </li>
+</ul>
+
+<p>Total number of phones: {{phones.length}}</p>
+
+<h1>Table build on repeats</h1>
+
+<table class="table table-bordered">
+    <tbody>
+        <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+            <td ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]">{{i + j}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
