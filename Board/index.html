@@ -5,7 +5,7 @@
     <title>Message Board</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="css/board.css">
+    <link rel="stylesheet" href="css/board.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -22,12 +22,10 @@
             <h1>Message Board</h1>
         </div>
 
-        <div class="col-md-12 vertical-center" style="background-color:darkslategray; height: 3em">
-
-                <input placeholder="Search..." class="col-sm-3 pull-right" ng-model="query">
-                <button class="btn btn-primary pull-right btn-sm" type="button">Remove</button>
-                <button class="btn btn-primary pull-right btn-sm" type="button">Add New</button>
-
+        <div class="col-md-12 vertical-align">
+            <button class="btn btn-primary btn-sm col-sm-1" type="button">Add New</button>&nbsp;
+            <button class="btn btn-primary btn-sm col-sm-1" type="button">Remove</button>&nbsp;
+            <input placeholder="Search..." class="col-sm-3" ng-model="query">
 
         </div>
     </div>
