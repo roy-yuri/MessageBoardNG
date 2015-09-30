@@ -1,4 +1,10 @@
-.vertical-align {
+.topics {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
+.header {
     display: flex;
     align-items: center;
     height: 3em;
